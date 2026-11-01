@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noor-e-Quran Online Academy</title>
     <style>
-        /* Pure Embedded CSS - No External Scripts or Frameworks Required */
         html { scroll-behavior: smooth; }
         body { 
             background-color: #043927 !important; 
@@ -16,10 +15,9 @@
             box-sizing: border-box;
         }
         
-        /* Top Navigation Bar */
         .top-bar {
             background-color: #032b1e;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-bottom: 2px solid #054d35;
             display: flex;
             justify-content: space-between;
@@ -29,6 +27,7 @@
         }
         .top-info span { margin-right: 15px; color: #eceff1; }
         .top-links a { color: #D4AF37; text-decoration: none; font-weight: bold; }
+        .top-links a:hover { text-decoration: underline; }
 
         header {
             background-color: #043927;
@@ -42,7 +41,7 @@
             top: 0;
             z-index: 100;
         }
-        .logo-text { font-size: 24px; font-weight: 900; color: #ffffff; }
+        .logo-text { font-size: 24px; font-weight: 900; color: #ffffff; text-decoration: none; }
         .logo-sub { font-size: 10px; color: #D4AF37; letter-spacing: 2px; text-transform: uppercase; display: block; }
         
         nav a { color: #ffffff; text-decoration: none; margin-left: 20px; font-weight: bold; font-size: 15px; }
@@ -50,7 +49,6 @@
         nav .trial-btn { background-color: #D4AF37; color: #043927; padding: 8px 16px; border-radius: 6px; }
         nav .trial-btn:hover { background-color: #fdd835; }
 
-        /* Hero Screen */
         .hero {
             text-align: center;
             padding: 80px 20px;
@@ -63,10 +61,11 @@
         
         .btn-container { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
         .btn-primary { background-color: #D4AF37; color: #043927; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .btn-primary:hover { background-color: #fdd835; }
         .btn-whatsapp { background-color: #25D366; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .btn-whatsapp:hover { background-color: #22c55e; }
 
-        /* Course Cards Section */
-        .section-wrapper { padding: 60px 20px; background-color: #032b1e; text-align: center; }
+        .section-wrapper { padding: 80px 20px; background-color: #032b1e; text-align: center; }
         .section-title { font-size: 32px; font-weight: 900; margin-bottom: 5px; }
         .section-divider { width: 60px; height: 3px; background-color: #D4AF37; margin: 0 auto 25px auto; }
         .section-subtitle { color: #a7f3d0; font-size: 15px; margin-bottom: 40px; }
@@ -87,9 +86,9 @@
         .card h3 { font-size: 20px; font-weight: bold; margin-bottom: 12px; color: #ffffff; }
         .card p { font-size: 14px; color: #a7f3d0; line-height: 1.5; margin-bottom: 20px; }
         .card a { color: #D4AF37; text-decoration: none; font-weight: bold; font-size: 14px; }
+        .card a:hover { color: #ffffff; }
 
-        /* Pricing Area */
-        .pricing-section { padding: 60px 20px; background-color: #043927; text-align: center; }
+        .pricing-section { padding: 80px 20px; background-color: #043927; text-align: center; }
         .price-card {
             background-color: #032b1e;
             border: 1px solid #054d35;
@@ -120,10 +119,11 @@
         .price-amount { font-size: 36px; font-weight: 900; color: #D4AF37; margin-bottom: 5px; }
         .price-pkr { font-size: 13px; color: #fff; font-weight: bold; margin-bottom: 25px; }
         .price-btn { display: block; background-color: #043927; color: white; padding: 10px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; }
+        .price-btn:hover { background-color: #054d35; }
         .price-card.featured .price-btn { background-color: #D4AF37; color: #043927; }
+        .price-card.featured .price-btn:hover { background-color: #fdd835; }
 
-        /* Registration Form Frame */
-        .form-section { padding: 60px 20px; background-color: #032b1e; }
+        .form-section { padding: 80px 20px; background-color: #032b1e; }
         .form-box { background-color: #043927; border: 1px solid #054d35; max-width: 480px; margin: 0 auto; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
         .form-box h3 { font-size: 24px; font-weight: 900; text-align: center; margin-bottom: 5px; }
         .form-box p { font-size: 13px; color: #a7f3d0; text-align: center; margin-bottom: 25px; }
@@ -134,13 +134,15 @@
         .form-group input:focus, .form-group select:focus { outline: none; border-color: #D4AF37; }
         
         .submit-btn { width: 100%; background-color: #25D366; color: white; padding: 14px; border: none; border-radius: 8px; font-size: 15px; font-weight: bold; cursor: pointer; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .submit-btn:hover { background-color: #22c55e; }
         
-        footer { background-color: #032b1e; padding: 30px 20px; text-align: center; font-size: 13px; color: #a7f3d0; border-top: 1px solid #054d35; }
+        footer { background-color: #032b1e; padding: 40px 20px; text-align: center; font-size: 13px; color: #a7f3d0; border-top: 1px solid #054d35; }
         footer a { color: #ffffff; text-decoration: none; font-weight: bold; }
+        footer a:hover { color: #D4AF37; }
 
-        /* Floating Fixed Action Trigger */
         .whatsapp-sticky { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); text-decoration: none; z-index: 1000; }
         .whatsapp-sticky img { width: 30px; height: 30px; }
+        .whatsapp-sticky:hover { background-color: #22c55e; }
 
         #google_translate_element { margin-bottom: 5px; }
     </style>
@@ -153,18 +155,18 @@
             <span><strong>Call:</strong> +92 342 9523575</span>
             <span><strong>Founder:</strong> Hafiz Muhammad Asim</span>
         </div>
-        <div class="top-links flex items-center">
+        <div class="top-links" style="display: flex; align-items: center; gap: 15px;">
             <div id="google_translate_element"></div>
-            <a href="https://facebook.com" target="_blank" style="margin-left: 15px;">Facebook Page</a>
+            <a href="https://facebook.com" target="_blank">Facebook Page</a>
         </div>
     </div>
 
     <!-- Main Navigation Header -->
     <header>
-        <div>
+        <a href="#home" style="text-decoration: none;">
             <span class="logo-text">Noor-e-Quran</span>
             <span class="logo-sub">Online Academy</span>
-        </div>
+        </a>
         <nav>
             <a href="#courses">Courses</a>
             <a href="#pricing">Fees</a>
@@ -183,7 +185,3 @@
         </div>
     </section>
 
-    <!-- Structural Individual Program Modules Matrix -->
-    <section class="section-wrapper" id="courses">
-        <h2 class="section-title">Our Core Courses</h2>
-        <div class="section-divider"></div>
